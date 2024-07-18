@@ -1,0 +1,277 @@
+html{
+    width: 100%;
+}
+body
+ {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(7, 7, 7);
+ }
+ *{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+/* @media screen and (max-width: 600px) {
+    .nav
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(68, 213, 249);
+    width:100%;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0.5px solid rgb(237, 12, 234);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.nav img
+{
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+.list li{
+    display: inline;
+}
+.list li a{
+    list-style: none;
+    padding: 10px;
+    color:rgb(254, 246, 246);
+    text-shadow: 1px 1px 1px rgb(65, 97, 0);
+    text-shadow: 0.5px 1px rgb(4, 4, 4) ;
+}
+} */
+
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(68, 213, 249);
+    width:100%;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 25px;
+    border: 1px solid rgb(237, 12, 234);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.nav img
+{
+  height: 100px;
+  width: 100px;
+  margin: 20px 10px;
+  border-radius: 30%;
+  border: 2px solid white;
+}
+.list li{
+    display: inline;
+}
+.list li a{
+    list-style: none;
+    padding: 50px;
+    color:rgb(254, 246, 246);
+    text-shadow: 1px 1px 1px rgb(65, 97, 0);
+    text-shadow: 1px 2px rgb(4, 4, 4) ;
+}
+.content{
+    display: flex;
+}
+.pic{
+    width: 500px;
+}
+.pic img{
+    margin: 100px;
+    border-radius: 50px;
+    border: 3px solid white;
+    width: 400px;
+    height: 400px;
+}
+.textbox1
+{
+    float: right;
+    display:block;
+    width: 800px;
+    align-items:flex-end;
+    direction: inherit;
+    padding-left: 50px;
+    text-align: center;
+    margin: 400px 0 20px auto;
+}
+.textbox1 h3{
+    width: 600px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 100px;
+    text-shadow: 1px 1px 1px rgb(68, 213, 249);
+
+}
+.aboutbox{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    float: right;
+    margin: 50px 30px 50px 0;
+}
+.textbox1 p{
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 30px 10px 20px;
+    margin: 50px;
+}
+.textbox1 h6 a{
+    font-size: 15px;
+    color:rgb(68, 213, 249);
+    padding: 0px 60px 0px 60px;
+    border-radius: 30px;
+    top: 0;
+    position: relative;
+    right: 30px;
+    float: right;
+    margin-bottom: 30px;
+}
+.textbox1 h6 a:hover{
+    background-color: rgb(68, 213, 249);
+    color: white;
+    cursor: pointer;
+}
+.end p{
+    text-align: center;
+    background-color:rgb(249, 247, 247);
+    color: rgb(9, 0, 0);
+    font-size: 10px;
+    left:0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+.content1{
+    display: block;
+}
+.fullimg img{
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    height: 50vh;
+    position:relative;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+.aboutcont{
+    background-color: whitesmoke;
+    width: 100vh;
+    display: flex-block;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.aboutcont h2{
+    padding: 50px 20px 10px;
+    text-shadow: 1px 1px rgb(68, 213, 249);
+    text-decoration: overline underline;
+}
+
+.aboutcont p{
+    padding: 10px 40px 50px 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.videobox{
+    display: flex;
+    justify-content: center;
+}
+.videobox video{
+    width: 800px;
+    height: 600px;
+    margin: 50px 0 50px;
+    border: 2px solid rgb(239, 244, 245);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 40px;
+}
+.videobox figcaption{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(68, 213, 249);
+    padding: 10px;
+    border-radius: 30px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact h2{
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 600px;
+    text-align: center;
+    border-radius: 30px;
+    text-shadow: 1px 1px 1px rgb(68, 213, 249);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+.forms{
+    background-color: whitesmoke;
+    width: 600px;
+    height: auto !important;
+    padding: 50px;
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+form label{
+    margin: 20px 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 0.5px 1px  rgb(68, 213, 249);
+}
+form input{
+    font-size:20px ;
+    padding: 15px;
+    width: 500px;
+    margin: 20px;
+    border: 0.5 solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+.buttons {
+    display: flex !important;
+    justify-content: center;
+}
+button{
+    font-size: 15px;
+    padding: 10px;
+    width: auto;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(68, 213, 249);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+button:hover{
+    background-color: rgb(219, 245, 116);
+    color: white;
+    cursor: pointer;
+}

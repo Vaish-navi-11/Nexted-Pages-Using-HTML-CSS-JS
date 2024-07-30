@@ -5,48 +5,16 @@ body
  {
     width: 100%;
     margin: 0;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(7, 7, 7)!important;
  }
  *{
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
  }
-/* @media screen and (max-width: 600px) {
-    .nav
-{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    background-color:rgb(68, 213, 249);
-    width:100%;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 15px;
-    border: 0.5px solid rgb(237, 12, 234);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.nav img
-{
-  height: 50px;
-  width: 50px;
-  margin: 20px 10px;
-  border-radius: 10%;
-  border: 1px solid white;
-}
-.list li{
-    display: inline;
-}
-.list li a{
-    list-style: none;
-    padding: 10px;
-    color:rgb(254, 246, 246);
-    text-shadow: 1px 1px 1px rgb(65, 97, 0);
-    text-shadow: 0.5px 1px rgb(4, 4, 4) ;
-}
-} */
-
-
+ .navbar{
+    
+    padding: 0;
+ }
 .nav
 {
     display: flex;
@@ -60,6 +28,7 @@ body
     border: 1px solid rgb(237, 12, 234);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    top: 0!important;
 }
 .nav img
 {
@@ -73,6 +42,7 @@ body
     display: inline;
 }
 .list li a{
+    text-decoration: none!important;
     list-style: none;
     padding: 50px;
     color:rgb(254, 246, 246);
@@ -160,7 +130,7 @@ body
 }
 .fullimg img{
     display: flex;
-    margin: 0 auto;
+    margin: 100px auto;
     width: 700px;
     height: 50vh;
     position:relative;
@@ -274,4 +244,18 @@ button:hover{
     background-color: rgb(219, 245, 116);
     color: white;
     cursor: pointer;
+}
+.carousel-item img{
+    width: 90vh;
+    height: 100vh;
+    margin: 10px auto;
+    border-top: 1px solid white;
+    border-bottom: 0.5px solid white;
+    border-radius: 20px;
+}
+.carousel-item h4{
+    font-family: fantasy;
+}
+.carousel-item p{
+    font-family: cursive;
 }

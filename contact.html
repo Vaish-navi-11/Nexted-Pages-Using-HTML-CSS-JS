@@ -21,18 +21,64 @@
     <div class="contact">
         <span><h2>To Reach Us</h2><br></span>
     <div class="forms">
-        <form>
-            <label for="fname">Full Name:</label><br>
-            <input type="text" id="fname" name="fname"  placeholder="Full Name"><br>
+        <form name="formvalidation" action="index.html" method="post" onsubmit="return validateForm()">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"  placeholder="Enter your first name.."><br>
+            <label for="name" class="elem">Last Name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name..">
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" placeholder="Email"><br>
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="Phone"><br>
+            <label for="number" class="elem">Phone Number</label><br>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number..">
             <label for="feedback">Your Comments:</label><br>
-            <input type="text" id="feedback" name="fedback" placeholder="Share your thoughts..">
-            <div class="buttons"><button>Submit</button>
+            <input type="text" id="feedback" name="feedback" placeholder="Share your thoughts..">
+            <div class="buttons"><button type="submit" value="submit">Submit</button>
             <button>Cancel</button></div>
             </form>
+            <script>
+                function validateForm() {
+                    var fname =document.formvalidation.fname.value;
+                    var lname = document.formvalidation.lname.value;
+                    var email = document.formvalidation.email.value;
+                    var phone = document.formvalidation.phone.value;
+                    var address = document.formvalidation.feedback.value;
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (fname==null || fname=="") {
+                        alert("First Name must be filled out");
+                        return false;
+                }
+                    else if (lname==null || lname=="") {
+                        alert("Last Name must be filled out");
+                        return false;
+                }
+                    else if (email==null || email=="") {
+                        alert("Email must be filled out");
+                        return false;
+                }
+                else if (!emailRegex.test(email)) {
+                            alert("Please enter a valid email address");
+                            return false;
+                        }
+                else if (phone==null || phone=="") {
+                        alert("Phone Number must be filled out");
+                        return false;
+                }
+                else if (phone.length<10 || phone.length>10) {
+                        alert("Phone Number must be 10 digits");
+                        return false;
+                 }
+                else if (address==null || address=="") {
+                        alert("Please sharer youe feedback");
+                        return false;
+                }
+                else{
+                    alert("Form submitted successfully");
+                    window.location.href="index.html";
+                    return true;
+                }
+    
+            }
+            </script>
     </div>
 </div>
 </body>
